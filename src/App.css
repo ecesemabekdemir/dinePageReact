@@ -1,0 +1,620 @@
+:root {
+  --kahverengimsi: #9E7F66;
+  --codgray:#111111;
+  --mirage:#17192B;
+  --ebony:#242B37;
+  --shutlegray:#5C6779;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.history {
+  max-width: 1440px;
+  height: 820px;
+  background-image: url(/public/img/makarna.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.history img {
+  max-width: 103px;
+  padding-top: 65px;
+  margin-left: 167px;
+  margin-bottom: 150px;
+}
+
+.history-writes {
+  max-width: 507px;
+  margin-left: 165px;
+  color: #FFF;
+}
+
+.history-writes h1 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.history-writes p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.history-writes a {
+  max-width: 245px;
+  padding: 24px 54px;
+  border: 1px solid #FFF;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  line-height: 16px;
+}
+
+.history-writes a:hover {
+  background-color: #FFF;
+  color: #111111;
+}
+
+.footer {
+  display: flex;
+  gap: 125px;
+  justify-content: center;
+}
+
+.dere {
+  top: -103px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+}
+
+.deretablet {
+  display: none;
+}
+
+.deremobil {
+  display: none;
+}
+
+.footer-inform {
+  max-width: 445px;
+  margin-top: 177px;
+}
+
+.footer-inform .design {
+  max-width: 71px;
+  margin-bottom: 55px;
+}
+
+.footer-inform h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: var(--ebony);
+  margin-bottom: 27px;
+}
+
+.footer-inform p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--ebony);
+}
+
+
+.food-promotion {
+  display: flex;
+  gap: 125px;
+  margin-left: 165px;
+}
+
+.asci {
+  position: relative;
+  z-index: 1;
+  bottom: -75px;
+}
+
+.ascitablet {
+  display: none;
+}
+
+.ascimobil {
+  display: none;
+}
+
+.menu {
+  max-width: 1440px;
+  border: 1px solid var(--codgray);
+  background-color: var(--codgray);
+  color: #FFF;
+  display: flex;
+  gap: 116px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.menu-inform {
+  max-width: 454px;
+  margin-block: 270px;
+  margin-left: 165px;
+}
+
+.menu-inform h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #FFF;
+  margin-bottom: 27px;
+}
+
+.menu-inform p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFF;
+}
+
+.menu-inform .design {
+  max-width: 71px;
+  margin-bottom: 55px;
+}
+
+
+.menu-item img {
+  max-width: 128px;
+}
+
+.menu-item hr {
+  max-width: 530px;
+  color: #FFFFFF;
+  margin-block: 24px;
+  opacity: 1;
+}
+
+.item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.item-writes {
+  max-width: 350px;
+}
+
+.item-writes h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  margin-bottom: 6px;
+}
+
+.item-writes p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.reservation {
+  max-width: 1440px;
+  height: 240px;
+  background-image: url(/public/img/navarkaplan.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  gap: 130px;
+  align-items: center;
+}
+
+.reservation h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  margin-left: 120px;
+}
+
+.reservation a {
+  padding: 24px 54px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  line-height: 16px;
+}
+
+.reservation a:hover {
+  background-color: #FFF;
+  color: #111111;
+}
+
+.nav  {
+  max-width: 1440px;
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 78px;
+  padding-inline: 165px;
+}
+
+.nav-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* TABLET BAŞLANGIÇ*/
+
+@media (width <= 768px) {
+   .container {
+    width: 768px;
+   }
+
+   .history {
+    width: 768px;
+    height: 992px;
+    background-image: url(/public/img/tabletmakarna.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   }
+
+  .history img {
+    width: 103px;
+    margin-inline: 327px;
+    margin-bottom: 0;
+    padding-top: 373px;
+    padding-bottom: 38px;
+  }
+
+   .history-writes {
+    width: 669px;
+    margin-inline: 127px;
+    text-align: center;
+   }
+
+   .history-writes h1 {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -0.6px;
+   }
+
+   .history p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 56px;
+   }
+
+   .footer {
+    display: inline-block;
+    margin-inline: 97px;
+   }
+
+  .dere {
+   top: -170px;
+   display: none;
+  } 
+
+  .deretablet {
+   width: 574px;
+   height: 390px;
+   display: inherit;
+   position: relative;
+   z-index: 1;
+   top: -103px;
+   box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+  }
+
+  .deremobil {
+    display: none;
+  }
+
+  .design {
+   margin: 0 auto;
+  }
+
+   .footer-inform {
+    width: 457px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 118px;
+    margin-left: 37px;
+   }
+
+   .food-promotion {
+    width: 573px;
+    margin-inline: 97px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column-reverse;
+    background-position-x: left;
+    gap: 45px;
+   }
+
+   .asci {
+    display: none;
+   }
+
+  .ascitablet {
+    display: inherit;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+  }
+
+   .ascimobil {
+    display: none;
+   }
+
+   .menu {
+    width: 768px;
+    display: inline-block;
+   }
+
+   .menu-inform {
+    width: 445px;
+    margin-inline: 160px;
+    margin-block: 0;
+    margin-top: 97px;
+    margin-bottom: 54px;
+    text-align: center;
+   }
+
+  .menu-item {
+    margin-bottom: 97px;
+  }
+
+   .item {
+    margin-inline: 97px;    
+   }
+
+   .menu-item hr {
+    margin-inline: 97px;
+   }
+
+   .reservation {
+    width: 768px;
+    height: 272px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(/public/img/tabletnav.png);
+   }
+
+  .reservation h1 {
+    margin-left: 49px;
+    margin-top: 72px;
+    margin-bottom: 44px;
+    font-size: 42px;
+  }
+
+  .reservation a {
+    margin-left: 245px;
+  }
+
+  .nav {
+    width: 768px;
+    display: inline-block;
+   }
+ 
+  .nav img {
+    margin-left: -129px;
+  }
+
+   .nav-item {
+    margin-bottom: 32px;
+   }
+}
+
+/*TABLET BİTİŞ*/
+
+/*MOBİL BAŞLANGIÇ*/
+
+@media (width <= 375px) {
+  .container {
+    width: 375px;
+   }
+
+   .history {
+    width: 375px;
+    height: 748px;
+    background-image: url(/public/img/mobilmakarna.png);
+   }
+
+   .history img {
+    width: 82px;
+    margin-inline: 143px;
+    padding-top: 232px;
+   }
+
+   .history-writes {
+    width: 327px;
+    margin-inline: 24px;
+   }
+
+   .history-writes h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+   }
+
+   .history-writes p {
+    font-size: 16px;
+    line-height: 26px;
+   }
+
+   .footer {
+    width: 327px;
+    margin-inline: 24px;
+    background-image: none;
+   }
+
+   .dere {
+    top: -103px;
+    display: none;
+   }
+   
+  .deretablet {
+    display: none;
+  }
+
+  .deremobil {
+    display: inherit;
+    position: relative;
+    z-index: 1;
+    top: -103px;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+  }
+
+   .footer-inform {
+    width: 327px;
+    margin-left: 3px;
+   }
+
+   .food-promotion {
+    width: 327px;
+    margin-inline: 24px;
+    background-image: none;
+   }
+
+   .asci {
+    display: none;
+   }
+
+   .ascitablet {
+    display: none;
+   }
+
+   .ascimobil {
+    display: inherit;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+   }
+
+   .menu {
+    width: 375px;
+   }
+
+   .menu-inform {
+    width: 327px;
+    margin-inline: 24px;
+   }
+
+   .menu-inform h2 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+   }
+
+   .menu-inform p {
+    font-size: 16px;
+    line-height: 26px;
+   }
+
+   .item {
+    width: 327px;
+    margin-inline: 24px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .item {
+    width: 327px;
+    text-align: center;
+   }
+  
+   .menu-item hr {
+    width: 327px;
+    margin-inline: 24px;
+   }
+
+   .reservation {
+    height: 328px;
+    background-image: url(/public/img/mobilnav.png);
+    background-repeat: no-repeat;
+   }
+
+   .reservation h1 {
+    width: 327px;
+    margin-inline: 24px;
+    text-align: center;
+   }
+
+   .reservation a {
+    margin-inline: 45px;
+   }
+
+   .nav {
+    width: 375px;
+    padding-inline: 0;
+   }
+
+  .nav img {
+    width: 103px;
+    margin-left: 147px;
+    margin-bottom: 42px;
+  }
+
+   .nav-item {
+    width: 327px;
+    text-align: center;
+   }
+} 
